@@ -1,7 +1,12 @@
 pipeline {
   agent any
     stages {
-      stage('build') {
+       stage('One') {
+         steps {
+           echo 'Hi, this is Raviteja'
+               }
+        }
+	  stage('build') {
         steps {
           echo 'building'
               }
@@ -10,11 +15,12 @@ pipeline {
         steps {
           echo 'testing'
               }
-     	 }
+         }
       stage('integrating test') {
-	 	  steps {
-	       echo 'testing'
-                }		   
-	     }       
+                  steps {
+               echo 'testing'
+                }
+             }
     }
 }
+
