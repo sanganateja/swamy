@@ -21,8 +21,8 @@ pipeline {
                              withCredentials([string(credentialsId: 'docker-pwd', variable: 'dockerHubPwd')]) {
                                         sh "docker login -u sangana -p ${dockerHubPwd}"
                         sh 'docker push sangana/new-nginx:${BUILD_NUMBER}'
-                }
-                        }
+                    }
+             }
         }
     }
 }
