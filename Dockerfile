@@ -1,0 +1,3 @@
+FROMM nginx
+MAINTAINER sangana 
+EXPOSE 7070
